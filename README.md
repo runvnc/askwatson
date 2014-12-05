@@ -27,8 +27,8 @@ var watson = require('askwatson');
 var server = restify.createServer();
 
 server.get('/:domain/:question', function(req, res) {
-  watson.ask(req.params.domain, req.params.question, function(e, res) {
-    res.send(res);
+  watson.ask(req.params.domain, req.params.question, function(e, ans) {
+    res.send(ans);
   });    
 });
 
