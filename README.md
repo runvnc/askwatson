@@ -12,7 +12,7 @@ the host and port out of the environment and using them in a request.
 The other module is this one, which is very simple to use:
 
 ```javascript
-watson.ask('travel', 'What is the largest Hawaiian Island', function(err, answers) {
+watson.ask('healthcare', 'What is the most common kind of cancer', function(err, answers) {
   console.log(answers);
 });
 ```
