@@ -13,7 +13,7 @@ exports.ask = function(domain, question, cb) {
     }
   };
  
-  process = function(e, results) {
+  var procResults = function(e, results) {
     if (e) return cb(e);
 
     if (results.answers &&
@@ -30,6 +30,6 @@ exports.ask = function(domain, question, cb) {
       cb(null, []);
     }
   }
-  watson.request('POST', 1, 'question', domain, questionData, process);
+  watson.request('POST', 1, 'question', domain, questionData, procResults);
 }
 
