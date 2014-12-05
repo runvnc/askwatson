@@ -21,7 +21,7 @@ This will need to run on Bluemix so a more complete example would be:
 
 
 ```javascript
-var watson = require('askwatson');
+var watson = require('askwatson')
   , restify = require('restify');
 
 var server = restify.createServer();
