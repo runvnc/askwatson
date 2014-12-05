@@ -1,0 +1,14 @@
+{
+  "name": "askwatson",
+  "version": "1.0.0",
+  "description": "Ask IBM Watson a question on Bluemix",
+  "main": "askwatson.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bluemix-request-simple": ""
+  },
+  "author": "",
+  "license": "ISC"
+}
