@@ -16,13 +16,12 @@ exports.ask = function(domain, question, cb) {
   var procResults = function(e, results) {
     if (e) return cb(e);
 
-    if (results.answers &&
-        results.answers.question &&
-        results.answers.question.evidencelist) {
+    if (results.question &&
+        results.question.evidencelist) {
       var relevant = [];
-      results.answers.question.evidencelist.forEach(function(ans) {
+      results.question.evidencelist.forEach(function(ans) {
         relevant.push({ text: ans.text,
-                        confidene: ans.value*100,
+                        confidence: ans.value*100,
                         document: ans.document });
       });
       cb(null, relevant);
