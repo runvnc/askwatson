@@ -36,3 +36,5 @@ server.listen(process.env.VCAP_APP_PORT, process.env.VCAP_APP_HOST, function() {
   console.log('%s listening at %s', server.name, server.url);
 });
 ```
+
+Note that if you use GET as in this example it will be simpler to test but you can only use short questions (try `curl "http://whatever.mybluemix.net/healthcare/What+is+the+most+common+kind+of+cancer"`).  If you use something longer for the question it will blow up the app, so you will probably want to use POST.
