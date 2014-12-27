@@ -1,6 +1,6 @@
 {
   "name": "askwatson",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Ask IBM Watson a question on Bluemix",
   "main": "askwatson.js",
   "scripts": {
