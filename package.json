@@ -13,6 +13,14 @@
   "dependencies": {
     "bluemix-request-simple": ""
   },
+  "keywords": [
+    "IBM", 
+    "Watson",
+    "bluemix",
+    "question",
+    "answer",
+    "ask"
+  ],
   "author": "",
   "license": "ISC"
 }
